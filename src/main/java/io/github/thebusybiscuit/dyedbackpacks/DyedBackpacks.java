@@ -25,8 +25,8 @@ public class DyedBackpacks extends JavaPlugin implements SlimefunAddon {
             new GitHubBuildsUpdater(this, getFile(), "TheBusyBiscuit/DyedBackpacks/master").start();
         }
 
-        Research research = new Research(new NamespacedKey(this, "dyed_backpacks"), 17200, "Dyed Backpacks", 24);
-        Category category = new Category(new NamespacedKey(this, "dyed_backpacks"), new CustomItem(SkullItem.fromBase64(BackpackColor.RED.getTexture()), "&4Dyed Backpacks"), 2);
+        Research research = new Research(new NamespacedKey(this, "dyed_backpacks"), 17200, "彩色背包", 24);
+        Category category = new Category(new NamespacedKey(this, "dyed_backpacks"), new CustomItem(SkullItem.fromBase64(BackpackColor.RED.getTexture()), "&4彩色背包"), 2);
 
         if (cfg.getBoolean("backpacks.small")) {
             createBackpacks(category, research, SlimefunItems.BACKPACK_SMALL, 9);
